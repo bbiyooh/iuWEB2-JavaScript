@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title></title>
+  </head>
+  <body>
+<script>
+  function one()
+  {document.write(1+1+'<br>');}
+one();
+
+function sum(left,right)
+{document.write(left+right+'<br>');}
+
+function sumred(left,right)
+{document.write('<div style="color:red">'+(left+right)+'</div>');}
+
+//왼쪽부터 우선시하고 string을 더 우선시 하기때문에 앞열에 string 이있다면 숫자 또한 그대로 출력이 되어 계산된값이아닌 그대로 출력이 됨 그래서 앞열에 string 이 있다면 () 를 쳐서 숫자를 따로 나눠줘야함
+sum(2,3);
+sum(3,5);
+sumred(2,2);
+</script>
+
+<script>
+
+  function sum2 (left,right)
+  {return (left+right);}
+
+  document.write (sum2(2,3)+'<br>');
+  document.write ('<div style="color:blue">'+sum2(2,4)+'</div>');
+  document.write ('<div style="font-size:3rem">'+sum2(2,4)+'</div>');
+
+</script>
+  </body>
+</html>

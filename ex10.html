@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title></title>
+  </head>
+  <body>
+    <h1>Object</h1>
+    <script>
+      var uaenaiu = {
+        "uaena" : "leeji",
+        "uaena2st" : "leedong"};
+
+        document.write("uaena : "+ uaenaiu.uaena+"<br>");
+        document.write("uaena2st : "+uaenaiu.uaena2st+"<br>");
+        uaenaiu["uaena 3st"] = "leeeun";
+        document.write("uaena3st : "+uaenaiu["uaena 3st"]+"<br>");
+    </script>
+
+    <h2>iterate</h2>
+
+    <script>
+    for (var key in uaenaiu) {document.write(key+' : '+uaenaiu[key]+"<br>");}
+    </script>
+  </body>
+</html>
